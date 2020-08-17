@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" width="60%">
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>密码</th>
+        </tr>
+        {% for st in res %}
+            <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ st.fname }}</td>
+            <td>{{ st.fpwd }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
